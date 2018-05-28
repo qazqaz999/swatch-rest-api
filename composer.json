@@ -1,0 +1,23 @@
+{
+    "name": "josephson/module-swatchrestapi",
+    "description": "Swatch Rest API",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "email": "josephson.eduardo@gmail.com",
+            "name": "Josephson"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Josephson\\SwatchRestApi\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

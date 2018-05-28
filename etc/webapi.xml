@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/products/attributes/:attributeCode/swatches" method="POST">
+		<service class="Josephson\SwatchRestApi\Api\SwatchRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Magento_Catalog::products" />
+        </resources>
+	</route>
+    <route url="/V1/products/attributes/:attributeCode/swatches/:optionId" method="GET">
+		<service class="Josephson\SwatchRestApi\Api\SwatchRepositoryInterface" method="getByAttributeAndOption"/>
+        <resources>
+            <resource ref="Magento_Catalog::products" />
+        </resources>
+	</route>
+</routes>
